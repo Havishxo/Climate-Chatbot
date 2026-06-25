@@ -1,0 +1,35 @@
+# ── Core LLM & Orchestration ─────────────────────────────────────────────────
+langchain>=0.3.0
+langchain-community>=0.3.0
+langchain-core>=0.3.0
+
+# ── IBM Watsonx (optional — swap with Anthropic or HuggingFace locally) ───────
+# ibm-watsonx-ai>=1.0.0      # Uncomment when IBM credentials are available
+
+# ── Vector Store ─────────────────────────────────────────────────────────────
+chromadb>=0.5.0
+
+# ── Embeddings (local fallback when IBM Granite embedding not available) ──────
+sentence-transformers>=3.0.0   # pip install separately if disk allows
+
+# ── UI & API ─────────────────────────────────────────────────────────────────
+gradio>=5.0.0
+fastapi>=0.115.0
+uvicorn>=0.30.0
+python-multipart>=0.0.9
+
+# ── Document Parsing ─────────────────────────────────────────────────────────
+pymupdf>=1.24.0        # PDF parsing (fitz)
+pillow>=10.0.0         # Image handling
+pandas>=2.0.0          # CSV / tabular data
+
+# ── Utilities ────────────────────────────────────────────────────────────────
+python-dotenv>=1.0.0
+requests>=2.31.0
+numpy>=1.26.0
+pydantic>=2.7.0
+httpx>=0.27.0
+tiktoken>=0.7.0        # Token counting
+
+# ── Evaluation (Phase 4) ──────────────────────────────────────────────────────
+# ragas>=0.1.0          # RAG evaluation — install when ready
